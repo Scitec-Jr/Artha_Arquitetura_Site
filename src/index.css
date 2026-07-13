@@ -1,0 +1,27 @@
+@font-face {
+    font-family: fontePoppins;
+    src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: fontePoppins2;
+    src: url('./assets/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: fontePoppins3;
+    src: url('./assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: fonteCodec;
+    src: url('./assets/fonts/codec-pro-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
