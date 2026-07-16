@@ -1,0 +1,262 @@
+/* ==========================================================
+   Hero — Quem somos
+   ========================================================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: #e35336;
+    padding: 80px 120px;
+}
+
+.heroText {
+    max-width: 1100px;
+}
+
+.heroTitle {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: 48px;
+    color: #f5f3ef;
+    margin-bottom: 30px;
+}
+
+.heroParagrafo {
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 25px;
+    line-height: 1.7;
+    color: #f5f3ef;
+    margin-bottom: 20px;
+}
+
+.heroParagrafo strong {
+    font-weight: 700;
+}
+
+.heroCompasso {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+/* ==========================================================
+   Equipe — Ana Lúcia
+   ========================================================== */
+.equipe {
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 1fr;   /* coluna da foto + coluna do texto */
+    column-gap: 40px;
+    row-gap: 25px;
+    background-color: #f5f3ef;
+    padding: 40px 60px;
+    overflow: hidden;
+}
+
+.fotoEquipe {
+    grid-column: 1;
+    grid-row: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.textoEquipe {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    z-index: 1;
+    padding-left: 60px;
+}
+
+.restoTextoEquipe {
+    grid-column: 1 / -1;   /* ocupa as duas colunas, ou seja, largura toda */
+    grid-row: 2;
+    position: relative;
+    z-index: 1;
+    width: 1230px;
+}
+
+.nomeEquipe {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: 45px;
+    color: #7e8c54;
+    margin-top: 20px; 
+    margin-bottom: 25px;
+}
+
+.paragrafoEquipe {
+    font-family: 'fontePoppins2', sans-serif;
+    font-size: 25px;
+    line-height: 1.7;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.destaqueLaranja {
+    color: #e35336;
+    font-weight: 700;
+}
+
+.destaqueVerde {
+    color: #7e8c54;
+    font-weight: 700;
+}
+
+.padraoFlor {
+    position: absolute;
+    right: -10px;
+    bottom: -20px;
+    width: 250px;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ==========================================================
+   Missão / Valores
+   ========================================================== */
+.missao,
+.valores {
+    display: flex;
+    align-items: stretch;
+}
+
+.missaoLogo,
+.valoresLogo {
+    flex: 0 0 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.valores {
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.missao {
+    position: relative;
+    z-index: 3;
+    box-shadow: 0px 8px 20px rgb(0, 0, 0, 0.25);
+}
+
+.missaoLogo {
+    background-color: #7e8c54;
+    position: relative;
+    z-index: 2;
+    box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.valoresLogo {
+    background-color: #e35336;
+    position: relative;
+    z-index: 2;
+    box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.logoMissaoValores {
+    width: 400px;
+    height: auto;
+}
+
+.missaoTexto,
+.valoresTexto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5f3ef;
+    padding: 60px 100px;
+}
+
+.tituloMissao {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: 45px;
+    color: #7e8c54;
+    margin-bottom: 25px;
+}
+
+.tituloValores {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: 45px;
+    color: #e35336;
+    margin-bottom: 25px;
+}
+
+.paragrafoMissaoValores {
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 25px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================
+   Serviços
+   ========================================================== */
+.servicos {
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.servicosOverlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 120px;
+    background: linear-gradient(100deg, rgb(126, 140, 84, 0.4) 0%, rgba(126, 140, 84, 0.4) 55%, rgba(126, 140, 84, 0.4) 100%);
+}
+
+.tituloServicos {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: 45px;
+    color: #f5f3ef;
+    margin-bottom: 25px;
+}
+
+.listaServicos {
+    list-style: none;
+    margin: 0 0 35px;
+    padding: 0;
+}
+
+.listaServicos.listaServicos {
+    display: block;
+    width: auto;
+    margin-right: 0;
+}
+
+.listaServicos li {
+    font-family: 'fontePoppins3', sans-serif;
+    font-size: 25px;
+    color: #f5f3ef;
+    margin-bottom: 12px;
+}
+
+.listaServicos li::before {
+    content: '•';
+    margin-right: 10px;
+}
+
+.botaoContato {
+    display: inline-block;
+    width: fit-content;
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f5f3ef;
+    text-decoration: none;
+    background-color: #e35336;
+    padding: 16px 32px;
+    border-radius: 8px;
+}

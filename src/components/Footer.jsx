@@ -27,10 +27,10 @@ function Footer() {
                 </div>
                 <div className={styles.navDiv}>
                     <ul className={styles.navBar}>
-                        <li><Link className={styles.meuLink} to="/">Home</Link></li>
-                        <li><Link className={styles.meuLink} to="/sobre">Sobre</Link></li>
-                        <li><Link className={styles.meuLink} to="/portfolio">Portifólio</Link></li>
-                        <li><Link className={styles.meuLink} to="contato">Contato</Link></li>
+                        <li className={styles.navItem}><Link className={styles.meuLink} to="/">Home</Link></li>
+                        <li className={styles.navItem}><Link className={styles.meuLink} to="/sobre">Sobre</Link></li>
+                        <li className={styles.navItem}><Link className={styles.meuLink} to="/portfolio">Portifólio</Link></li>
+                        <li className={styles.navItem}><Link className={styles.meuLink} to="contato">Contato</Link></li>
                     </ul>
                 </div>
             </div>

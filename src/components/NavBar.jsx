@@ -15,7 +15,7 @@ function NavBar({className, variante = 'navBarPrincipal'}) {
             <div className={styles.elementos}>
                 <ul>
                     <li><Link className={styles.meuLink} to="/">Home</Link></li>
-                    <li><Link className={styles.meuLink} to="/sobre">Sobre</Link></li>
+                    <li><Link className={styles.meuLink} to="/Sobre">Sobre</Link></li>
                     <li><Link className={styles.meuLink} to="/portfolio">Portifólio</Link></li>
                     <li><Link className={styles.meuLink} to="contato">Contato</Link></li>
                 </ul>
