@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e bordas não aumentem o tamanho dos elementos */
+}
+
+/* Remove qualquer margem ou padding padrão do body e html */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Mantém a segurança contra rolagens laterais */
+}
