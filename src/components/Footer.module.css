@@ -12,6 +12,12 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     padding: 0 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.whitefooter {
+    background-color: #FFFFF0;
 }
 
 .container {
@@ -32,10 +38,18 @@ body {
     color: #f5f3ef;
 }
 
+.contactInfoO {
+    color:#e35336;
+}
+
 .title {
     margin-top: 60px;
     margin-bottom: 60px;
     font-size: 40px;
+}
+
+.titleO {
+    color: #e35336;
 }
 
 .info {
@@ -93,6 +107,10 @@ body {
     font-size: 24px;
 }
 
+.meuLinkO {
+    color: #e35336;
+}
+
 .slogan {
     display: flex;
     flex-direction: column;
@@ -106,13 +124,26 @@ body {
     gap: 10px;
 }
 
+.logoArtha {
+    width: 144px;
+    height: 63px;
+}
+
 .sloganText {
     padding-top: 15px;
     font-size: 24px;
     color: #f5f3ef;
 }
 
+.sloganTextO {
+    color: #e35336;
+}
+
 .madeBy {
     color: #f5f3ef;
     text-align: center;
+}
+
+.madeByO {
+    color: #e35336;
 }

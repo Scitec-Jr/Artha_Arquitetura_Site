@@ -1,0 +1,106 @@
+.container {
+    background-color: #E35336;
+    display: flex;
+    padding-top: 60px;
+    margin-bottom: -250px;
+}
+
+.info {
+    margin-right: 40px;
+    padding-top: 175px;
+}
+
+.logoImage {
+    width: 535px;
+    height: 255px;
+    transform: translateX(15px);
+}
+
+.contactInfo {
+    margin-left: 75px;
+    padding-left: 10px;
+    padding-top: 15px;
+    border-top: solid white 2px;
+    width: 400px;
+}
+
+.individualInfo {
+    display: flex;
+    padding-top: 15px;
+}
+
+.imageEmail {
+    width: 50px;
+    height: 42px;
+}
+
+.imageWhatsapp {
+    margin-left: 6px;
+    width: 39px;
+    height: 39px;
+}
+
+.infoText {
+    font-family: 'fontePoppins', sans-serif;
+    color: white;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.circle {
+    background-color: #f39b81;
+    -webkit-mask-image: url('../assets/images/circuloVariante.png');
+    mask-image: url('../assets/images/circuloVariante.png');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.form {
+    background-color: #7E8C54;
+    width: 856px;
+    height: 743px;
+    border-radius: 25px;
+}
+
+h2 {
+    font-family: 'fonteCodec';
+    font-weight: bold;
+    font-size: 31px;
+    color: white;
+    padding-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 60px 20px;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-right: 40px;
+    align-items: start;
+}
+
+label {
+    color: white;
+    text-align: right;
+    transform: translate(0, 10px);
+}
+
+label.tag {
+    transform: translate(0, 80px);
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+
+input.message {
+    height: 400%;
+}
