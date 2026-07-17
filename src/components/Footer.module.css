@@ -32,6 +32,7 @@ body {
     width: 300px;
     max-width: 100%;
     font-size: 20px;
+    color: #f5f3ef;
 }
 
 .contatoInfo {
@@ -77,6 +78,7 @@ body {
 
 .infoText {
     margin-left: 15px;
+    color: #f5f3ef;
 }
 
 .navDiv {
