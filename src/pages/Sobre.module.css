@@ -1,5 +1,5 @@
 /* ==========================================================
-   Hero — Quem somos
+   hero - Quem somos
    ========================================================== */
 .hero {
     display: flex;
@@ -16,14 +16,14 @@
 
 .heroTitle {
     font-family: 'fonteCodec', sans-serif;
-    font-size: 48px;
+    font-size: clamp(32px, 4vw, 48px);
     color: #f5f3ef;
     margin-bottom: 30px;
 }
 
 .heroParagrafo {
     font-family: 'fontePoppins', sans-serif;
-    font-size: 25px;
+    font-size: clamp(16px, 1.6vw, 25px);
     line-height: 1.7;
     color: #f5f3ef;
     margin-bottom: 20px;
@@ -40,7 +40,7 @@
 }
 
 /* ==========================================================
-   Equipe — Ana Lúcia
+   Equipe
    ========================================================== */
 .equipe {
     position: relative;
@@ -72,16 +72,16 @@
 }
 
 .restoTextoEquipe {
-    grid-column: 1 / -1;   /* ocupa as duas colunas, ou seja, largura toda */
+    grid-column: 1 / -1;  
     grid-row: 2;
     position: relative;
     z-index: 1;
-    width: 1230px;
+    width: 85%;          
 }
 
 .nomeEquipe {
     font-family: 'fonteCodec', sans-serif;
-    font-size: 45px;
+    font-size: clamp(28px, 3.2vw, 45px);
     color: #7e8c54;
     margin-top: 20px; 
     margin-bottom: 25px;
@@ -89,7 +89,7 @@
 
 .paragrafoEquipe {
     font-family: 'fontePoppins2', sans-serif;
-    font-size: 25px;
+    font-size: clamp(16px, 1.6vw, 25px);
     line-height: 1.7;
     padding-top: 20px;
     margin-bottom: 20px;
@@ -159,7 +159,8 @@
 }
 
 .logoMissaoValores {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;   
     height: auto;
 }
 
@@ -175,21 +176,21 @@
 
 .tituloMissao {
     font-family: 'fonteCodec', sans-serif;
-    font-size: 45px;
+    font-size: clamp(28px, 3.2vw, 45px);
     color: #7e8c54;
     margin-bottom: 25px;
 }
 
 .tituloValores {
     font-family: 'fonteCodec', sans-serif;
-    font-size: 45px;
+    font-size: clamp(28px, 3.2vw, 45px);
     color: #e35336;
     margin-bottom: 25px;
 }
 
 .paragrafoMissaoValores {
     font-family: 'fontePoppins', sans-serif;
-    font-size: 25px;
+    font-size: clamp(16px, 1.6vw, 25px);
     line-height: 1.7;
     margin-bottom: 20px;
 }
@@ -200,26 +201,31 @@
 .servicos {
     position: relative;
     min-height: 480px;
-    display: flex;
-    align-items: center;
     background-size: cover;
     background-position: center;
 }
-
+ 
+.servicos::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(100deg, rgb(126, 140, 84, 0.4) 0%, rgba(126, 140, 84, 0.4) 55%, rgba(126, 140, 84, 0.4) 100%);
+    z-index: 1;
+}
+ 
 .servicosOverlay {
     position: relative;
-    width: 100%;
-    height: 100%;
+    z-index: 2;
+    min-height: 480px;      
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 120px 120px;
-    background: linear-gradient(100deg, rgb(126, 140, 84, 0.4) 0%, rgba(126, 140, 84, 0.4) 55%, rgba(126, 140, 84, 0.4) 100%);
 }
 
 .tituloServicos {
     font-family: 'fonteCodec', sans-serif;
-    font-size: 45px;
+    font-size: clamp(28px, 3.5vw, 45px);
     color: #f5f3ef;
     margin-bottom: 25px;
 }
@@ -238,7 +244,7 @@
 
 .listaServicos li {
     font-family: 'fontePoppins3', sans-serif;
-    font-size: 25px;
+    font-size: clamp(16px, 1.6vw, 25px);
     color: #f5f3ef;
     margin-bottom: 12px;
 }
@@ -259,4 +265,130 @@
     background-color: #e35336;
     padding: 16px 32px;
     border-radius: 8px;
+}
+
+/* ==========================================================
+   Responsivo
+   ========================================================== */
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 60px 60px;
+    }
+
+    .equipe {
+        padding: 40px 40px;
+    }
+
+    .missaoTexto,
+    .valoresTexto {
+        padding: 40px 50px;
+    }
+
+    .servicosOverlay {
+        padding: 80px 60px;
+    }
+
+    .missaoLogo,
+    .valoresLogo {
+        flex: 0 0 260px;
+    }
+}
+
+/* Telas Menores */
+@media (max-width: 860px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 30px;
+    }
+
+    .heroCompasso {
+        width: 120px;
+    }
+
+    .equipe {
+        grid-template-columns: 1fr;   
+        justify-items: center;
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .fotoEquipe {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .textoEquipe {
+        grid-column: 1;
+        grid-row: 2;
+        padding-left: 0;
+    }
+
+    .restoTextoEquipe {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .paragrafoEquipe {
+        text-align: left;   
+    }
+
+    .missao,
+    .valores {
+        flex-direction: column;
+    }
+
+    .missaoLogo,
+    .valoresLogo {
+        flex: 0 0 auto;
+        padding: 30px;
+    }
+
+    .logoMissaoValores {
+        max-width: 220px;
+    }
+
+    .missaoTexto,
+    .valoresTexto {
+        padding: 30px;
+    }
+
+    .servicosOverlay {
+        padding: 60px 30px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .equipe {
+        padding: 30px 20px;
+    }
+
+    .fotoEquipe {
+        width: 180px;
+        height: 180px;
+    }
+
+    .missaoTexto,
+    .valoresTexto {
+        padding: 25px 20px;
+    }
+
+    .servicosOverlay {
+        padding: 40px 20px;
+        
+    }
+
+    .botaoContato {
+        width: 100%;
+        text-align: center;
+    }
 }

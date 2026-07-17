@@ -13,11 +13,11 @@ function NavBar({className, variante = 'navBarPrincipal'}) {
         <div className={classesCombinadas}>
             <img src={logoImage} className={styles.logoArtha} style={{visibility : variante === 'Transparent' ? 'hidden' : 'visible'}} alt="Logo da Empresa Artha" />
             <div className={styles.elementos}>
-                <ul>
+                <ul className={styles.navList}>
                     <li><Link className={styles.meuLink} to="/">Home</Link></li>
-                    <li><Link className={styles.meuLink} to="/Sobre">Sobre</Link></li>
+                    <li><Link className={styles.meuLink} to="/sobre">Sobre</Link></li>
                     <li><Link className={styles.meuLink} to="/portfolio">Portifólio</Link></li>
-                    <li><Link className={styles.meuLink} to="contato">Contato</Link></li>
+                    <li><Link className={styles.meuLink} to="/contato">Contato</Link></li>
                 </ul>
             </div>
         </div>

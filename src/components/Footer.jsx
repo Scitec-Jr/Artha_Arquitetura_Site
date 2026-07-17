@@ -38,7 +38,7 @@ function Footer({ cor = 'orange' }) {
                         <li className={styles.navItem}><Link className={`${styles.meuLink} ${cor === 'white' ? styles.meuLinkO : ''}`} to="/">Home</Link></li>
                         <li className={styles.navItem}><Link className={`${styles.meuLink} ${cor === 'white' ? styles.meuLinkO : ''}`} to="/sobre">Sobre</Link></li>
                         <li className={styles.navItem}><Link className={`${styles.meuLink} ${cor === 'white' ? styles.meuLinkO : ''}`} to="/portfolio">Portifólio</Link></li>
-                        <li className={styles.navItem}><Link className={`${styles.meuLink} ${cor === 'white' ? styles.meuLinkO : ''}`} to="contato">Contato</Link></li>
+                        <li className={styles.navItem}><Link className={`${styles.meuLink} ${cor === 'white' ? styles.meuLinkO : ''}`} to="/contato">Contato</Link></li>
                     </ul>
                 </div>
             </div>

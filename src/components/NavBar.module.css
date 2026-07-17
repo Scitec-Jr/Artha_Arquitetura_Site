@@ -5,9 +5,11 @@ body{
 
 .navBase {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    height: 89px;
+    min-height: 89px;
 }
 
 .navBarPrincipal {
@@ -16,11 +18,11 @@ body{
 
 .Transparent{
     background-color: rgba(0, 0, 0, 0);
-    margin-left: 280px;
+    margin-left: clamp(0px, 15vw, 280px);
 }
 
 .logoArtha {
-    margin-left: 120px;
+    margin-left: clamp(20px, 8vw, 120px);
     width: 186px;
     height: 84px;
 }
@@ -29,17 +31,78 @@ body{
     margin-right: 10px;
 }
 
-ul {
+.navList {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin-top: 25px;
-    margin-right: 150px;
+    margin-right: clamp(20px, 10vw, 150px);
     justify-content: space-between;
-    width: 937px;
+    gap: 24px;
+    width: min(937px, 90vw);
 }
 
 .meuLink {
     color: #f5f3ef;
     text-decoration: none;
     font-size: 20px;
+}
+
+/* ==========================================================
+   Responsivo
+   ========================================================== */
+@media (max-width: 1024px) {
+    .logoArtha {
+        width: 150px;
+        height: auto;
+    }
+
+    .navList {
+        margin-right: clamp(20px, 5vw, 60px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navBase {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        padding: 16px 0;
+    }
+
+    .Transparent {
+        margin-left: 0;
+    }
+
+    .logoArtha {
+        margin-left: 0;
+        margin-bottom: 12px;
+    }
+
+    .elementos {
+        margin-right: 0;
+    }
+
+    .navList {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        justify-content: center;
+        gap: 16px;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logoArtha {
+        width: 120px;
+    }
+
+    .meuLink {
+        font-size: 16px;
+    }
+
+    .navList {
+        gap: 12px;
+    }
 }
