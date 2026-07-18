@@ -43,6 +43,8 @@ function Contato () {
 
                             <label className={styles.tag}>Mensagem</label>
                             <input className={styles.message} type="text" />
+
+                            <input className={styles.button} type="submit" />
                         </form>
                     </div>
                 </div>

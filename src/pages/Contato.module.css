@@ -77,9 +77,9 @@ h2 {
 .formulario {
     display: grid;
     grid-template-columns: max-content 1fr;
-    gap: 60px 20px;
+    gap: 40px 20px;
     padding-left: 60px;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-right: 40px;
     align-items: start;
 }
@@ -103,4 +103,17 @@ input {
 
 input.message {
     height: 400%;
+}
+
+.button {
+    background-color: #E35336;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    width: 200%;
+    height: 150%;
+    transform: translate(300%, 225%);
+    color: white;
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 24px;
 }
