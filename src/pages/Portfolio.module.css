@@ -1,0 +1,176 @@
+/* ==========================================================
+   Hero
+   ========================================================== */
+.hero {
+    background-color: #f5f3ef;
+    padding: 60px clamp(24px, 6vw, 120px) 40px;
+}
+
+.heroText {
+    max-width: 780px;
+}
+
+.heroTitle {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: clamp(28px, 3.2vw, 42px);
+    color: #e35336;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.heroParagrafo {
+    font-family: 'fontePoppins', sans-serif;
+    font-size: clamp(16px, 1.4vw, 18px);
+    line-height: 1.6;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.heroBotoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.botaoServicos,
+.botaoContato {
+    display: inline-block;
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.botaoServicos {
+    background-color: #7e8c54;
+    color: #f5f3ef;
+}
+
+.botaoContato {
+    background-color: transparent;
+    border-color: #e35336;
+    color: #e35336;
+}
+
+/* ==========================================================
+   Seção de projetos
+   ========================================================== */
+.secaoProjetos {
+    position: relative;
+    background-color: #f5f3ef;
+    padding: 40px clamp(24px, 6vw, 120px) 80px;
+    overflow: hidden;
+}
+
+.categoriaHeader {
+    text-align: center;
+    margin: 40px 0 40px;
+}
+
+.categoriaPill {
+    display: inline-block;
+    font-family: 'fonteCodec', sans-serif;
+    font-size: 24px;
+    color: #e35336;
+    background-color: #7e8c54;
+    padding: 10px 40px;
+    border-radius: 999px;
+}
+
+.categoriaSub {
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 14px;
+    color: #7e8c54;
+    margin-top: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cardImagem {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.card:hover .cardImagem {
+    transform: scale(1.02);
+}
+
+.cardTitulo {
+    font-family: 'fontePoppins3', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e35336;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.decorTopoEsquerda,
+.decorMeioDireita,
+.decorBaixoEsquerda {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.decorTopoEsquerda {
+    top: 100px;
+    left: 0;
+    transform: translate(-30%, -20%);
+}
+
+.decorMeioDireita {
+    top: 55%;
+    right: 0;
+    transform: translate(30%, 0);
+}
+
+.decorBaixoEsquerda {
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%, 20%);
+}
+
+/* ==========================================================
+   Responsivo
+   ========================================================== */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+    }
+
+    .decorTopoEsquerda,
+    .decorMeioDireita,
+    .decorBaixoEsquerda {
+        display: none;
+    }
+}

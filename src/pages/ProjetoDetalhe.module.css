@@ -1,0 +1,59 @@
+.conteudo {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px clamp(20px, 5vw, 60px) 80px;
+    overflow: hidden;
+}
+
+.decorTopoDireita {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: auto;
+    transform: translate(20%, -10%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.voltar {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #e35336;
+    text-decoration: underline;
+    margin: 20px 0;
+}
+
+.titulo {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: clamp(32px, 4vw, 48px);
+    color: #7e8c54;
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.imagem {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.naoEncontrado {
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 60px 0 20px;
+}

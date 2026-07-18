@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Contato from './pages/Contato'
+import Portfolio from './pages/Portfolio'
+import ProjetoDetalhe from './pages/ProjetoDetalhe'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import './App.css'
@@ -17,6 +19,8 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/contato" element={<Contato />}></Route>
           <Route path="/sobre" element={<Sobre />}></Route>
+          <Route path="/portfolio" element={<Portfolio />}></Route>
+          <Route path="/portfolio/:slug" element={<ProjetoDetalhe />}></Route>
         </Routes>
       </div>
     </Router>
