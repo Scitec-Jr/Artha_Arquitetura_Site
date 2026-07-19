@@ -2,12 +2,30 @@
    Hero
    ========================================================== */
 .hero {
+    display: flex;
+    align-items: stretch;
+    min-height: 640px;
+    gap: 0;
     background-color: #f5f3ef;
-    padding: 60px clamp(24px, 6vw, 120px) 40px;
 }
 
 .heroText {
+    flex: 1;
     max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px clamp(24px, 6vw, 120px);
+}
+
+.heroImagem {
+    flex: 1;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
 }
 
 .heroTitle {
@@ -42,6 +60,7 @@
     padding: 12px 24px;
     border-radius: 8px;
     border: 2px solid transparent;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .botaoServicos {
@@ -66,32 +85,47 @@
 }
 
 .categoriaHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 40px 0 40px;
 }
 
+.categoriaLogo {
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    height: auto;
+    margin-bottom: -50px;
+}
+
 .categoriaPill {
+    position: relative;
+    z-index: 1;
     display: inline-block;
     font-family: 'fonteCodec', sans-serif;
-    font-size: 24px;
+    font-size: 35px;
     color: #e35336;
     background-color: #7e8c54;
-    padding: 10px 40px;
-    border-radius: 999px;
+    padding: 40px 110px;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .categoriaSub {
     font-family: 'fontePoppins', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #7e8c54;
     margin-top: 12px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    max-width: 1100px;
+    max-width: 1600px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -99,6 +133,8 @@
 
 .card {
     display: block;
+    flex: 0 1 410px;
+    max-width: 430px;
     text-decoration: none;
     color: inherit;
 }
@@ -107,7 +143,7 @@
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 2px;
     display: block;
     transition: transform 0.2s ease;
 }
@@ -118,25 +154,26 @@
 
 .cardTitulo {
     font-family: 'fontePoppins3', sans-serif;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 700;
     color: #e35336;
     text-align: center;
     margin-top: 14px;
 }
 
+
 .decorTopoEsquerda,
 .decorMeioDireita,
 .decorBaixoEsquerda {
     position: absolute;
-    width: 350px;
+    width: 250px;
     height: auto;
     pointer-events: none;
     z-index: 0;
 }
 
 .decorTopoEsquerda {
-    top: 100px;
+    top: 1.75%;
     left: 0;
     transform: translate(-30%, -20%);
 }
@@ -153,6 +190,16 @@
     transform: translate(-30%, 20%);
 }
 
+.logoGrandeFinal {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-bottom: -5%;
+    margin-left: auto;
+    margin-right: -80px;
+}
+
 /* ==========================================================
    Responsivo
    ========================================================== */
@@ -160,6 +207,26 @@
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .heroImagem {
+        width: 100%;
+        height: 260px;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+    .logoGrandeFinal {
+    width: 200px;
+    height: auto;
+    margin-right: 0;
+}
+
 }
 
 @media (max-width: 560px) {
@@ -173,4 +240,10 @@
     .decorBaixoEsquerda {
         display: none;
     }
+    .logoGrandeFinal {
+    width: 200px;
+    height: auto;
+    margin-right: 0;
+}
+
 }

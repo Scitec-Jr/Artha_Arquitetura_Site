@@ -1,20 +1,24 @@
 .conteudo {
     position: relative;
-    max-width: 1100px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 40px clamp(20px, 5vw, 60px) 80px;
+    padding: 40px 0 80px;
     overflow: hidden;
 }
 
 .decorTopoDireita {
     position: absolute;
-    top: 0;
+    top: -37px;
     right: 0;
-    width: 120px;
+    width: 250px;
     height: auto;
     transform: translate(20%, -10%);
     pointer-events: none;
     z-index: 0;
+}
+
+.textoTopo {
+    padding: 0 clamp(20px, 5vw, 60px);
 }
 
 .voltar {
@@ -22,11 +26,15 @@
     z-index: 1;
     display: inline-block;
     font-family: 'fontePoppins', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     color: #e35336;
     text-decoration: underline;
     margin: 20px 0;
+}
+
+.voltarVerde {
+    color: #7e8c54;
 }
 
 .titulo {
@@ -39,15 +47,28 @@
 
 .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 40px;
+}
+
+@media (max-width: 1000px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
 }
 
 .imagem {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 0;
     display: block;
 }
 
