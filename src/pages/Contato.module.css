@@ -1,12 +1,12 @@
 .container {
     background-color: #E35336;
     display: flex;
+    justify-content: space-between;
     padding-top: 60px;
     margin-bottom: -250px;
 }
 
 .info {
-    margin-right: 40px;
     padding-top: 175px;
 }
 
@@ -61,7 +61,7 @@
     background-color: #7E8C54;
     width: 856px;
     height: 743px;
-    right: 10%;
+    margin-right: 4%;
     border-radius: 25px;
 }
 
