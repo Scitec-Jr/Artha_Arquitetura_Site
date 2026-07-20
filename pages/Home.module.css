@@ -1,0 +1,190 @@
+body {
+    background-color: #f5f3ef;
+}
+
+.navBar_Banner {
+    position: relative;
+    padding-top: 7px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarHome {
+    position: relative;
+    margin-bottom: auto;
+    z-index: 3;
+}
+
+.banner {
+    position: absolute;
+    margin-bottom: auto;
+    top: 7%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -8%);
+    object-fit: cover;
+    z-index: 2;
+}
+
+.logoSlogan {
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0, -6%)
+}
+
+.imageTriangular {
+    height: 250px;
+    width: 250px;
+    transform: translate(-18%, -5%)
+}
+
+.titleSlogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.Title {
+    font-family: 'fonteCodec', sans-serif;
+    font-size: 40px;
+    position: relative;
+    align-self: center;
+    display: inline-block;
+    color: #e35336;
+}
+
+.Title::after {
+    content: '';
+    position: absolute;
+    bottom: -60%;
+    left: -15%;
+    height: 3px;
+    width: 130%;
+    background-color: #e35336;
+}
+
+.slogan {
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 20px;
+    transform: translateY(40px);
+    color: #e35336;
+}
+
+.logoOrange {
+    height: 123.98px;
+    width: 222.13px;
+    margin-top: 60px;
+}
+
+.images {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+.image {
+    position: relative;
+    display: inline-block;
+}
+
+.image::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #7e8c54, transparent 35%);
+    z-index: 1;
+}
+
+.portfolioText {
+    font-family: 'fontePoppins', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    text-decoration: none;
+    bottom: 5%;
+    left: 35px;
+    color: white;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.portfolioText:hover {
+    transform: translateX(-10px);
+    font-size: 17px;
+}
+
+.ourAdvantages {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#advantages {
+    transform: translate(160%, -40%);
+}
+
+.cImg {
+    transform: translate(40%, 10%);
+}
+
+.images2 {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -6px 0px #d5d2cc;
+    transform: translateY(-80px);
+    padding-top: 60px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-bottom: -60px;
+}
+
+.image2 {
+    position: relative;
+    display: block;
+}
+
+.aboutUs {
+    position: absolute;
+    left: 20%;
+    bottom: 15%;
+    background-color: #e35336;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'fontePoppins';
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.aboutUs:hover {
+    transform: translateX(-7px);
+    font-size: 17px;
+}
+
+.contact {
+    position: absolute;
+    left: 20%;
+    bottom: 15%;
+    background-color: #7e8c54;
+    width: 253px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'fontePoppins';
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.contact:hover {
+    font-size: 17px;
+}
