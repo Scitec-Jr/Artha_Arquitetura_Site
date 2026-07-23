@@ -290,12 +290,21 @@ body {
     width: 30%;
     transform: translate(-10%, 25%);
 }
-
-
+    
   .images {
     margin-top: -15%;
 }
+    
+  .portfolioText {
+    font-size: 9px;
+    width: 110%;
+    transform: translateX(-10%);
+  }
 
+  .portfolioText:hover{
+    font-size: 9.5px;
+  }
+    
   .ourAdvantages {
     margin-top: 1%;
   }
