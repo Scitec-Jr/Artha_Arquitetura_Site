@@ -158,7 +158,7 @@ body {
 
 .portfolioText {
     font-family: 'fontePoppins', sans-serif;
-    font-size: clamp(0.7rem, 1.2vw, 2rem);
+    font-size: clamp(0.7rem, 1.08vw, 2rem);
     position: absolute;
     text-decoration: none;
     bottom: 5%;
@@ -169,7 +169,7 @@ body {
 }
 
 .portfolioText:hover {
-    transform: translateX(-10px);
+    transform: translateX(-6px);
     font-size: 17px;
 }
 
